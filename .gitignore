@@ -1,0 +1,10 @@
+######################
+## Terraform-Kubernets
+######################
+
+
+/.terraform
+terraformGoogleCloud.iml
+terraform.tfstate.backup
+terraform.tfstate
+gcp.json
