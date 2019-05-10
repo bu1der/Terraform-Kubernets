@@ -12,7 +12,7 @@ resource "google_container_cluster" "kubernetes" {
   depends_on = ["google_project_service.kubernetes"]
 
   # Must be set if `node_pool` is not set.
-  initial_node_count = 2
+  initial_node_count = 3
 
   # Disable basic auth
   master_auth {
