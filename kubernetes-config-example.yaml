@@ -53,7 +53,7 @@ spec:
     spec:
       containers:
       - name: eSchool #image name
-        image: gcr.io/devops-project-233717/devops-demo:latest
+        image: gcr.io/devops-project-233717/devops-demo:0.0.1 #DO not use latest version
         ports:
         - containerPort: 8080
 

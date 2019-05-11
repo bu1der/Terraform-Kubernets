@@ -16,3 +16,18 @@ variable "project_name" {
 variable "cluster" {
   default = "mydevops-cluster"
 }
+
+variable "prefix" {
+  description = "The prefix used for all resources"
+  default = "eschool"
+}
+
+variable "ip_cidr_range" {
+	description = "The address_prefix used for subnetwork ip"
+  default = "10.0.1.0/24"
+}
+
+variable "countnat" {
+	description = "The count nat used for prefix to nat external address"
+  default = "1"
+}
