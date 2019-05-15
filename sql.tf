@@ -8,7 +8,7 @@ data "null_data_source" "eschoolprod_mysql" {
 }
 
 resource "google_sql_database_instance" "eschoolprod" {
-    name               = "${var.prefix}-mysql"
+    name               = "${var.prefix}-mysql-service"
     region             = "${var.region}"
     database_version   = "${var.database_version}"
 

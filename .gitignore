@@ -8,3 +8,5 @@ terraformGoogleCloud.iml
 terraform.tfstate.backup
 terraform.tfstate
 gcp.json
+devops095.pub
+devops095_ossh.pem

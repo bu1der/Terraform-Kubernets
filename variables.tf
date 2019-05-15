@@ -1,3 +1,7 @@
+variable "credentials" {
+  description = "Path to file containing credentials"
+  default     = "gcp.json"
+}
 variable "region" {
   description = "The region that the machine should be created in"
   default = "us-central1"
@@ -90,6 +94,24 @@ variable user_password {
   default     = "IF095eSchool"
 }
 
+#Bastion
+variable "machine_type_jenkins" {
+  default = "n1-standard-2"
+}
+
+variable "image" {
+    default = "centos-cloud/centos-7"
+}
+
+variable "public_key_path" {
+  description = "Path to file containing public key"
+  default     = "devops095.pub"
+}
+
+variable "private_key_path" {
+  description = "Path to file containing private key"
+  default     = "devops095_ossh.pem"
+}
 
 
 
