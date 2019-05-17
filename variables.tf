@@ -103,6 +103,10 @@ variable "image" {
     default = "centos-cloud/centos-7"
 }
 
+variable "instance_name" {
+    default = "jenkins"
+}
+
 variable "public_key_path" {
   description = "Path to file containing public key"
   default     = "devops095.pub"
