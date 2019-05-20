@@ -68,7 +68,7 @@ ng build --prod
         <delegate plugin="publish-over@0.22">
           <publishers>
             <jenkins.plugins.publish__over__ssh.BapSshPublisher plugin="publish-over-ssh@1.20.1">
-              <configName>docker_server</configName>
+              <configName>localhost</configName>
               <verbose>false</verbose>
               <transfers>
                 <jenkins.plugins.publish__over__ssh.BapSshTransfer>

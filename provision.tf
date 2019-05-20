@@ -23,36 +23,36 @@ resource "null_resource" remoteExecProvisionerWFolder {
     destination = "/tmp/ansible"
   }
 
-#   provisioner "file" {
-#     content = "${data.template_file.jenkins_conf.rendered}"
-#     destination = "/tmp/ansible/files/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml"
-#   }
-#    provisioner "file" {
-#     content = "${data.template_file.app_conf.rendered}"
-#     destination = "/tmp/ansible/files/application.properties"
-#   }
-#    provisioner "file" {
-#     content = "${data.template_file.job_frontend.rendered}"
-#     destination = "/tmp/ansible/files/job_frontend.xml"
-#   }
-#    provisioner "file" {
-#     content = "${data.template_file.job_backend.rendered}"
-#     destination = "/tmp/ansible/files/job_backend.xml"
-#   }
-#    provisioner "file" {
-#     content = "${data.template_file.deployment_backend.rendered}"
-#     destination = "/tmp/ansible/kubernetes/deployment-backend.yml"
-#   }
+  provisioner "file" {
+    content = "${data.template_file.jenkins_conf.rendered}"
+    destination = "/tmp/ansible/files/jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml"
+  }
+   provisioner "file" {
+    content = "${data.template_file.app_conf.rendered}"
+    destination = "/tmp/ansible/files/application.properties"
+  }
+   provisioner "file" {
+    content = "${data.template_file.job_frontend.rendered}"
+    destination = "/tmp/ansible/files/job_frontend.xml"
+  }
+   provisioner "file" {
+    content = "${data.template_file.job_backend.rendered}"
+    destination = "/tmp/ansible/files/job_backend.xml"
+  }
+   provisioner "file" {
+    content = "${data.template_file.deployment_backend.rendered}"
+    destination = "/tmp/ansible/kubernetes/deployment-backend.yml"
+  }
 
-#    provisioner "file" {
-#     content = "${data.template_file.deployment_frontend.rendered}"
-#     destination = "/tmp/ansible/kubernetes/deployment-frontend.yml"
-#   }
+   provisioner "file" {
+    content = "${data.template_file.deployment_frontend.rendered}"
+    destination = "/tmp/ansible/kubernetes/deployment-frontend.yml"
+  }
 
-#    provisioner "file" {
-#     content = "${data.template_file.service-backend.rendered}"
-#     destination = "/tmp/ansible/kubernetes/service-backend.yml"
-#   }
+   provisioner "file" {
+    content = "${data.template_file.service-backend.rendered}"
+    destination = "/tmp/ansible/kubernetes/service-backend.yml"
+  }
 }
 
 resource "null_resource" inventoryFileWeb {
